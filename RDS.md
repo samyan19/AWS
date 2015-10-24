@@ -29,3 +29,22 @@
 * There are some limitations to RDS we should know prior to "spinning up" our RDS instance.
 * Push button high availability is one of the greatest features of RDS. (same region)
 * NOTE: All databases on an instance that has been configured for Multi-AZ HA are *Mirrored.* This was not in the lessons so * please take not of this.
+* security groups define the ports to access the instance
+* master user in setupadmin,processadmin,public server roles
+* Installed standard edition within an hour
+* Availability Zones give us high availability with the push of a button.
+* When we want to use multi-AZ deployments we have to choose it when we spin up our instance.
+* Security groups are like firewalls. We when spin up an instance we must allow traffic on our instance port number.
+* Availability Zones are in the same region.
+* When the database in synchronized with the secondary the principal will have "principal, synchronized" beside it.
+* Prior to choosing an Instance Action the correct instance must be selected.
+* A snapshot is a backup.
+* Snapshots can be automated or manual.
+* A snapshot restore creates an entirely new database.
+* A final snapshot prior to deleting an instance is probably a good practice.
+* The "Modify" option gives us the ability to rename our instance.
+* We can easily vertically scale an instance.
+* The "Modify" option gives up the ability to vertically scale our instance.
+* There will be down time during the scaling process.
+* recommended Imprt/export need to know what is allowed and what isn't. errors on errors
+* 
