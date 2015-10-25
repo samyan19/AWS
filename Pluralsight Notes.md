@@ -38,8 +38,20 @@
 * HA - mirroring
 * Encryption - TDE *read more - what does encrypt at rest mean??*
 * parameter groups to set trace flags, sp_configure 
-* 
+
 ##Command Line Interface
 * http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html
 * http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAM.html#d0e12854 *IAM and policies*
+* 
+##Admin
+* cant configure server directly
+* cant enable features
+* use console to reset password
+* agent no maint plans or command lines with agent
+* agent - no e-mail notifications (better use cloudwatch)
+* agent - cannot delete job through gui
+* log files, daily 7 days, 7 day retention
+* logfiles = d:\RDSDBDATA
+ 
+##
 
