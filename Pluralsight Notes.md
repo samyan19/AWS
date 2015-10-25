@@ -42,7 +42,7 @@
 ##Command Line Interface
 * http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html
 * http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAM.html#d0e12854 *IAM and policies*
-* 
+
 ##Admin
 * cant configure server directly
 * cant enable features
