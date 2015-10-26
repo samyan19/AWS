@@ -55,7 +55,7 @@
 * logfiles = d:\RDSDBDATA
  
 ##Data Migration
-* Cannot restore
+* Cannot restore from backup (bak)
 * generate scripts, import/export wiz, bcp command line, sql migration wizard
 * MAKE SURE LOGINS ARE CREATED (plus other server level objects)
 * script data only work for small databases
@@ -78,5 +78,24 @@
 * if you change to simple RDS sets back to full when the full backup runs 
 * simple=set backup retention to 0
 * backup window max 3 - RDS does not cancel overrunning jobs
+* snap - can be moved accross regions
+* snap - good for - rollback backup, project milestones, send copy to different region, save on decommission
+* snap - snap with TDE cannot be restored to another region
+* failover - synchronous mirroring
+* failover triggers - AZ outage, instance failure, instance type fails, patching, manual
+* amazon updates dns - low TTL to pick up new 
+* *what is apply immediately*
+
+##Limitations
+* no sysadmin
+* *how do you translate groups*
+* SSIS, SSIS, SSAS can be deployed on seperate ec2 vm
+* linked server - can link in (premise to rds) but not link out - data needs to be copied
+* SQLAgentUserRole default - use one account for all jobs
+* Size and storage type cannot be changed once created 
+* repl - publisher to subscriber(aws) works but not publisher (cloud)
+* setting up replication requires the actual server name to connect as subscriber. workaround in aws is to set up an alias both 32 and 64 bit 
+* push subscription only
+* no filestream/service broker/availability group/db mail/sql server audit/only safe clr/server level triggers/pbm/msdtc/utc only
 * 
 
