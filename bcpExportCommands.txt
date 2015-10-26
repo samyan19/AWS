@@ -1,0 +1,12 @@
+bcp.exe "[HR].[dbo].[DaysWorked]" out "c:\SQLAzureMW\BCPData\dbo.DaysWorked.dat" -E -n -C RAW -S .\SQLEXPRESS -T 
+bcp.exe "[HR].[dbo].[HoursTracked]" out "c:\SQLAzureMW\BCPData\dbo.HoursTracked.dat" -E -n -C RAW -S .\DEMO -T 
+bcp.exe "[HR].[dbo].[Salary]" out "c:\SQLAzureMW\BCPData\dbo.Salary.dat" -E -n -C RAW -S .\DEMO -T 
+bcp.exe "[HR].[dbo].[AggregatedHourStats]" out "c:\SQLAzureMW\BCPData\dbo.AggregatedHourStats.dat" -E -n -C RAW -S .\DEMO -T 
+bcp.exe "[HR].[dbo].[ClientHoursTracked]" out "c:\SQLAzureMW\BCPData\dbo.ClientHoursTracked.dat" -E -n -C RAW -S .\DEMO -T 
+bcp.exe "[HR].[dbo].[Employees]" out "c:\SQLAzureMW\BCPData\dbo.Employees.dat" -E -n -C RAW -S .\SQLEXPRESS -T 
+
+
+
+bcp.exe "[HR2].[dbo].[Employees]" in "c:\SQLAzureMW\BCPData\dbo.Employees.dat" -E -n -C RAW -S pluraldemo.cloljyy7ynt7.us-west-2.rds.amazonaws.com -U sa 
+
+
