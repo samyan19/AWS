@@ -28,6 +28,7 @@
 * provisioned - 1000-20000IOPS, single digit latency - IO intensive, high perf db
 * magnetic - 3TB limit, 100 IOP average, higher latency, non-prod/archival
 * instance bandwidth - dedicated EBS best for SQL *read more* 
+* http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html *guide*
 
 ##Network
 * Availability Zone = datacenter
@@ -53,5 +54,14 @@
 * log files, daily 7 days, 7 day retention
 * logfiles = d:\RDSDBDATA
  
-##
+##Data Migration
+* Cannot restore
+* generate scripts, import/export wiz, bcp command line, sql migration wizard
+* MAKE SURE LOGINS ARE CREATED (plus other server level objects)
+* script data only work for small databases
+* generate scripts - 1) script for target version 2) triggers 3) script collation 4) object level permissions
+* service broker not supported
+* you cannot rename a database in AWS
+* create schema then import data (wizard or bcp)
+* bcp -E (Insert Identity) -n(use native datatype) -C(no data type conversion) -S (servername) -T (win auth)
 
