@@ -1,0 +1,15 @@
+To see an instance details:
+
+aws rds describe-db-instances --db-instance-identifier pluraldemo
+
+To change your backup retention:
+
+aws rds modify-db-instance --db-instance-identifier pluraldemo --backup-retention-period 7
+
+To create a snapshot:
+
+aws rds create-db-snapshot --db-instance-identifier pluraldemo --db-snapshot-identifier hrpresalarydrop
+
+To restore a snapshot:
+
+aws rds restore-db-instance-from-db-snapshot --db-instance-identifier pluralrestore --db-snapshot-identifier hrpresalarydrop
