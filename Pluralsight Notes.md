@@ -96,6 +96,6 @@
 * repl - publisher to subscriber(aws) works but not publisher (cloud)
 * setting up replication requires the actual server name to connect as subscriber. workaround in aws is to set up an alias both 32 and 64 bit 
 * push subscription only
-* no filestream/service broker/availability group/db mail/sql server audit/only safe clr/server level triggers/pbm/msdtc/utc only
+* no filestream/service broker/availability group/db mail/sql server audit/only safe clr/server level triggers/pbm/msdtc/utc only/dqs
 * 
 
