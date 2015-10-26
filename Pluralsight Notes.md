@@ -64,4 +64,19 @@
 * you cannot rename a database in AWS
 * create schema then import data (wizard or bcp)
 * bcp -E (Insert Identity) -n(use native datatype) -C(no data type conversion) -S (servername) -T (win auth)
+* SQL Database Migration Wizard - http://sqlazuremw.codeplex.com/
+
+##Backups and HA
+* sql backups, on demand snapshots
+* billed seperately - 200GB db = 200GB of free backup
+* backup retention 35 days max - 0=disabling backups and restarts your instance
+* compression on by default
+* TDE for encrypted backups
+* point in time restore - instance level, new instance has to be created
+* user db full 
+* log backups every 5 mins
+* if you change to simple RDS sets back to full when the full backup runs 
+* simple=set backup retention to 0
+* backup window max 3 - RDS does not cancel overrunning jobs
+* 
 
