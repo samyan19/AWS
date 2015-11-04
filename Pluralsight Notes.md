@@ -22,7 +22,7 @@
 * on demand, reserved instance (for prod - cheaper the longer it is reserved for)
 * m3 - general balanced
 * r3 - same core, double ram- prod sql
-* t2 - 20% baseline and burst up - small, medium, appps that are only used sometimes
+* t2 - 20% baseline CPU and burst up - credit gained when under baseline - small, medium, appps that are only used sometimes. http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html
 * m1,m2 not reccommended as they are old gen machines *read more*
 * general - small to medium db (burst 3 to 3000 IOPS) - *where can you see your burst credits*
 * provisioned - 1000-20000IOPS, single digit latency - IO intensive, high perf db
